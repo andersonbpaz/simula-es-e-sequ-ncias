@@ -1,0 +1,18 @@
+tarefaSemente <- addTaskCallback(function(...) {set.seed(123);TRUE}) # atribui a tarefa à variável tarefaSemente
+tarefaSemente
+
+# variável normal 
+distNormal <- rnorm(100)
+
+summary(distNormal)
+
+# variável binomial
+distBinominal <- rbinom(100, 1, 0.5)
+
+# repetições
+classe <- c(rep("Livro", length(distBinominal)/2), rep("Livro Ficção", length(distBinominal)/2))
+
+# variável index
+index <- seq(1, length(distNormal))
+
+removeTaskCallback(tarefaSemente)
